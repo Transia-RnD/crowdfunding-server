@@ -2,9 +2,9 @@
     "name": "crowdfund-server",
     "version": "0.0.1",
     "scripts": {
-        "start": "ts-node src/index.ts"
+        "start": "ts-node api/index.ts"
     },
-    "main": "src/index.ts",
+    "main": "api/index.ts",
     "dependencies": {
         "@tsconfig/node16": "^16.1.1",
         "@types/cors": "^2.8.14",
