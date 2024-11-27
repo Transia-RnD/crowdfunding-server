@@ -14,7 +14,14 @@ app.post('/payload', async (req: Request, res: Response) => {
   try {
     try {
       const xumm = new Xumm(process.env.XUMM_APIKEY, process.env.XUMM_APISECRET)
-      const payload = await xumm.payload?.create(req.body, true)
+      const payload = await xumm.payload?.create({
+        options: {
+          force_network: 'MAINNET'
+        },
+        txjson: {
+          ...req.body
+        }
+      }, true)
       res.json(payload)
     } catch (error) {
       console.error(error)
