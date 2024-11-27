@@ -22,9 +22,9 @@
      "preserveSymlinks": true,
    },
    "include": [
-     "src/**/*.ts",
-     "src/**/*.tsx",
-     "src/**/*.json"
+     "api/**/*.ts",
+     "api/**/*.tsx",
+     "api/**/*.json"
    ],
    "exclude": [
      "node_modules",
