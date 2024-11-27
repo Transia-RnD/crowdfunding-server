@@ -1,8 +1,8 @@
 {
-    "name": "mock-evernode",
+    "name": "crowdfund-server",
     "version": "0.0.1",
     "scripts": {
-        "serve": "ts-node src/index.ts"
+        "start": "ts-node src/index.ts"
     },
     "main": "src/index.ts",
     "dependencies": {
